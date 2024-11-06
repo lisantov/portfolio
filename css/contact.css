@@ -161,15 +161,12 @@ body{
 }
 
 .contact-fieldset{
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
     border-color: rgb(55, 55, 55);
     border-radius: 10px;
-}
-
-.inputfields{
-    flex-basis: calc(60% + 50px);
 }
 
 .contact-legend{
@@ -181,7 +178,7 @@ body{
 
 .contact-form-wrap{
     padding: 50px;
-    width: 100%;
+    width: 60%;
 }
 
 .form-group{
@@ -238,4 +235,33 @@ body{
     background-color: #222;
     color: rgba(28, 217, 132, 0.9);
     transition: 0.2s;
+}
+
+.contact-info{
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.info-block{
+    margin: 40px 0px;
+    font-size: 24px;
+}
+
+.info-points{
+    font-size: 16px;
+    margin-left: 25px;
+    color: #555;
+}
+
+.info-points a{
+    text-decoration: none;
+    color: #888;
+    transition: 0.3s;
+}
+
+.info-points a:hover{
+    color: rgba(28, 217, 132, 0.9);
+    transition: 0.15s;
 }

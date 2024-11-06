@@ -29,19 +29,39 @@
                     <h1>Давайте свяжемся</h1>
                 </div>
                 <div class="projects">
-                    <form>
+                    <form action="mail.php" method="POST">
                         <fieldset class="contact-fieldset">
-                            <div class="inputfields">
-                                <legend class="contact-legend">Напишите мне</legend>
-                                <div class="contact-form-wrap">
+                            <legend class="contact-legend">Напишите мне</legend>
+                            <div class="contact-form-wrap">
+                                <div>
                                     <div class="form-group">
-                                        <input class="contact-input title-input" type="text" placeholder="Ваше имя" required>
-                                        <input class="contact-input title-input last" type="text" placeholder="Ваш email" required>
+                                        <input name="name" class="contact-input title-input" type="text" placeholder="Ваше имя" required>
+                                        <input name="email" class="contact-input title-input last" type="text" placeholder="Ваш email" required>
                                     </div>
                                     <div class="form-group">    
-                                        <textarea class="contact-input message-input" type="text" placeholder="Напишите сообщение..." required></textarea>   
+                                        <textarea name="message" class="contact-input message-input" type="text" placeholder="Напишите сообщение..." required></textarea>   
                                     </div>
                                     <button type="submit" class="contact-button">Отправить сообщение</button>
+                                </div>
+                            </div>
+                            <div class="contact-info">
+                                <div class="info-block">
+                                    Контакты
+                                    <div class="info-points">
+                                        <p>Email: <a target="_blank" href="mailto:">lisantov@yandex.ru</a></p>
+                                    </div>
+                                </div>
+                                <div class="info-block">
+                                    Соц сети
+                                    <div class="info-points">
+                                        <p>Telegram: <a target="_blank" href="https://t.me/lisantovv">@lisantovv</a></p>
+                                    </div>
+                                    <div class="info-points">
+                                        <p>VK: <a target="_blank" href="https://vk.com/save_me_my_friend">@save_me_my_friend</a></p>
+                                    </div>
+                                    <div class="info-points">
+                                        <p>GitHub: <a target="_blank" href="https://github.com/lisantov">@lisantov</a></p>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>
